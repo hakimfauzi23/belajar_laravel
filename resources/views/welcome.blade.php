@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Ampun Bang Jago
                 </div>
 
                 <div class="links">
