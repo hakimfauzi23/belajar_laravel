@@ -11,21 +11,31 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('halo', function () {
+// 	return "Halo, Guys Kembali lagi di channel kita";
+// });
+
+// Route::get('blog', function () {
+// 	return view('blog');
+// });
+
+// Route::get('dosen', 'DosenController@index');
+
+// Route::get('/pegawai/{nama}', 'PegawaiController@index');
+
+// Route::get('/formulir', 'PegawaiController@formulir');
+// Route::post('/formulir/proses', 'PegawaiController@proses');
+
+// route bawaan default laravel
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
-Route::get('halo', function () {
-	return "Halo, Guys Kembali lagi di channel kita";
-});
-
-Route::get('blog', function () {
-	return view('blog');
-});
-
-Route::get('dosen', 'DosenController@index');
-
-Route::get('/pegawai/{nama}', 'PegawaiController@index');
-
-Route::get('/formulir', 'PegawaiController@formulir');
-Route::post('/formulir/proses', 'PegawaiController@proses');
+// route blog
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
