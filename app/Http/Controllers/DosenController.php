@@ -12,4 +12,6 @@ class DosenController extends Controller
  
     	return view('biodata',['nama' => $nama , 'matkul' => $pelajaran]);
     }
+
+    // #6 MAINTENANCE MODE IS DONE
 }
