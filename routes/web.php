@@ -53,3 +53,5 @@ Route::get('/pegawai/cari','PegawaiController@cari');
 
 Route::get('/input', 'MalasngodingController@input');
 Route::post('/proses', 'MalasngodingController@proses');
+
+Route::get('/pegawai', 'PegawaiController@index');
